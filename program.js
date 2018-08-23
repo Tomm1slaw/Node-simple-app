@@ -10,12 +10,10 @@ process.stdin.on('readable', function() {
             	process.exit();
             	break;
             case 'language':
-            	var language = JSON.stringify(process.env.LANG);
-            	process.stdout.write(language);
+            	console.log(process.env.LANG);
             	break;
             case 'version':
-            	var vers = JSON.stringify(process.versions.node);
-            	process.stdout.write(vers);
+            	console.log(process.versions.node);
             	break;
       		default:
             	process.stderr.write('Wrong instruction!\n');
