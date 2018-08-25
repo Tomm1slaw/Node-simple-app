@@ -15,6 +15,4 @@ function converter(uptime){
     return time;
 }
 
-converter(3700);
-
 exports.convert = converter;
